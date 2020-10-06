@@ -54,7 +54,7 @@ a{
 }
 img{
     border: #24272B;
-    padding: .5 rem;
+    max-width: 80%;
     background-color: #BCC2C8;
 }
 @media screen and (max-width: 480px) {

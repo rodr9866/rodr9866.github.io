@@ -59,6 +59,9 @@ img{
     background-color: #BCC2C8;
 }
 @media screen and (max-width: 480px) {
+    p{
+        clear: left;
+    }
 	.name {
 		font-size: 4rem;
 	}

@@ -54,7 +54,8 @@ a{
 }
 img{
     border: #24272B;
-    max-width: 80%;
+    height: auto;
+    max-width: 90%;
     background-color: #BCC2C8;
 }
 @media screen and (max-width: 480px) {

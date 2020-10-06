@@ -1,0 +1,64 @@
+*{
+    margin: 0 auto;
+}
+.circleCrop{
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+    float: left;
+}
+body{
+    color: #BCC2C8;
+    background-color: #24272B;
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2{
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    margin-top: 20px;
+}
+.navBar{
+    background-color: #003366;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 100%;
+}
+.navBar a{
+    color: #BCC2C8;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.navBar a:hover{
+    background-color: #BCC2C8;
+    color: #24272B;
+}
+.projectImg{
+    width: auto;
+    height: 200px;
+}
+a{
+    color: aqua;
+}
+img{
+    border: #24272B;
+    padding: .5 rem;
+    background-color: #BCC2C8;
+}
+@media screen and (max-width: 480px) {
+	.name {
+		font-size: 4rem;
+	}
+}

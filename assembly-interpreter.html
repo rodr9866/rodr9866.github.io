@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Projects</title>
+
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+        </div>    
+        <div class="content">
+            <h2>Assembler - Computer Architecture</h2>
+            <p>
+                During the class Computer Architecture at the University of St. Thomas, I collaborated with a classmate to write a program that would assemble assembly code into binary machine code using C as a language. I got to learn about how instructions are stored and interpreted in the computer which gave me perspective on how data is stored and read by the machine at the lowest level of architecture.
+            </p>
+
+
+            </code></pre><h1 id="how-to-run">How to run</h1>
+            <h3>Example input</h3>
+            <a href="https://github.com/rodr9866/CISC-340-project-1" target="_blank">
+                <img src="images/assemblyCode1.png" alt="Assembly code" class="projectImg">
+            </a>
+            <pre><code>With one <span class="hljs-built_in">input</span> <span class="hljs-keyword">file</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">print</span> <span class="hljs-keyword">to</span> screen
+            ./asm -i {<span class="hljs-built_in">input</span>.<span class="hljs-keyword">as</span>}
+            With one <span class="hljs-built_in">input</span> <span class="hljs-keyword">file</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">write</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">an</span> output <span class="hljs-keyword">file</span>
+            ./asm -i {<span class="hljs-built_in">input</span>.<span class="hljs-keyword">as</span>} -<span class="hljs-keyword">o</span> {output.mc}
+            ./asm -i {<span class="hljs-built_in">input</span>.<span class="hljs-keyword">as</span>} &gt; {output.mc}
+            </code></pre><h1 id="dependent-files">Dependent files</h1>
+            <pre><code>assembler<span class="hljs-selector-class">.c</span> - <span class="hljs-selector-tag">code</span> that converts assembly to machine <span class="hljs-selector-tag">code</span>
+            Makefile - <span class="hljs-keyword">for</span> compiling assembler<span class="hljs-selector-class">.c</span> with glibrary and making an executable
+            </code></pre><h1 id="test-files">Test files</h1>
+            <pre><code> **All errors throw a <span class="hljs-keyword">message</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">exit</span> unless marked <span class="hljs-keyword">otherwise</span>**
+            <span class="hljs-number">1</span>. bad_opcodes.<span class="hljs-keyword">asm</span> - tests faulty commands
+            <span class="hljs-number">2</span>. duplicate_labels.<span class="hljs-keyword">asm</span> - tests duplicate labels        
+            <span class="hljs-number">3</span>. empty.<span class="hljs-keyword">asm</span> - tests an empty <span class="hljs-keyword">file</span>. **produces no errors <span class="hljs-keyword">and</span> no output**  
+            <span class="hljs-number">4</span>. every_command.<span class="hljs-keyword">asm</span>  - tests every valid command **produces no errors**      
+            <span class="hljs-number">5</span>. label_same_as_command.<span class="hljs-keyword">asm</span> - tests <span class="hljs-keyword">for</span> labels <span class="hljs-keyword">with</span> the same <span class="hljs-keyword">name</span> <span class="hljs-keyword">as</span> a command
+            <span class="hljs-number">6</span>. label_starts_with_number.<span class="hljs-keyword">asm</span> - tests <span class="hljs-keyword">for</span> invalid labels starting <span class="hljs-keyword">with</span> a non char
+            <span class="hljs-number">7</span>. label_too_long.<span class="hljs-keyword">asm</span> - tests <span class="hljs-keyword">for</span> long labels
+            <span class="hljs-number">8</span>. offset_too_big.<span class="hljs-keyword">asm</span> - tests <span class="hljs-keyword">for</span> too large non <span class="hljs-keyword">label</span> offsets
+            <span class="hljs-number">9</span>. register_out_of_range.<span class="hljs-keyword">asm</span> - tests <span class="hljs-keyword">for</span> <span class="hljs-keyword">register</span> inputs within <span class="hljs-number">0</span>-<span class="hljs-number">7</span>
+            <span class="hljs-number">10</span>. undefined_labels.<span class="hljs-keyword">asm</span> - tests the us <span class="hljs-keyword">of</span> an undefined <span class="hljs-keyword">label</span>     
+            <span class="hljs-number">11</span>. <span class="hljs-keyword">program</span>.<span class="hljs-keyword">asm</span> - <span class="hljs-keyword">default</span> assembly <span class="hljs-keyword">program</span> provided by the assignment
+            </code></pre>
+        </div>
+        
+    </body>
+</html>

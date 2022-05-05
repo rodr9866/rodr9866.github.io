@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects</title>
+    <script type="application/javascript" src="scripts/worlddist.js"></script>
+
+</head>
+    <body>
+        <div class="navBar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+        </div>
+      
+        <body onload="Init();">
+            <h1>World Location Distance Calculator</h1>
+            <p>This calculator uses the nominatim open street map API to find the distance between two points. This was one of my first assignments using API publicly hosted APIs and I remember it being the time I understood how applications can share data with each other.</p>
+
+            <p>Location 1: <input id="loc1" type="text" placeholder="enter location" /></p>
+            <p>Location 2: <input id="loc2" type="text" placeholder="enter location" /></p>
+            <button id="calculate" type="button">Calculate</button>
+            <div style="margin: 1rem 0; padding: 0.25rem; border: solid 1px black;">
+                <h3 style="margin: 0;">Distance Result</h3>
+                <p id="result"></p>
+            </div>
+        </body>
+    </html>
+    </body>
+</html>

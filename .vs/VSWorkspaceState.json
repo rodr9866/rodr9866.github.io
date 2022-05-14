@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images",
+    "\\scripts"
   ],
-  "SelectedNode": "\\C:\\Users\\ricar\\Source\\Repos\\rodr9866.github.io",
+  "SelectedNode": "\\scripts\\worlddist.js",
   "PreviewInSolutionExplorer": false
 }
